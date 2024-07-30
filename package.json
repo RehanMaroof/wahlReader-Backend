@@ -1,0 +1,58 @@
+{
+  "name": "wahl_pdf_backend",
+  "version": "1.0.0",
+  "description": "Boilerplate for NodeJS Application with Express, MySQL & Sequelize ORM",
+  "main": "app.js",
+  "scripts": {
+    "format:check": "prettier --check .",
+    "format": "prettier --write .",
+    "lint:check": "eslint .",
+    "lint": "eslint --fix .",
+    "test": "npm run test",
+    "prestart": "npx sequelize-cli db:migrate && npx sequelize-cli db:seed:all",
+    "start": "node ./bin/www",
+    "start:dev": "nodemon ./bin/www"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "sequelize"
+  ],
+  "author": "Accubits",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.1579.0",
+    "bcrypt": "^5.1.1",
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.6",
+    "cookie-session": "^2.1.0",
+    "cors": "^2.8.5",
+    "csv-parse": "^5.5.6",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.3",
+    "helmet": "^7.1.0",
+    "joi": "^17.12.2",
+    "jsonwebtoken": "^9.0.2",
+    "minisearch": "^6.3.0",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "mysql2": "^3.9.2",
+    "passport": "^0.7.0",
+    "pdf-parse": "^1.1.1",
+    "pgsn": "^1.1.3",
+    "pino": "^8.19.0",
+    "pino-pretty": "^10.3.1",
+    "redis": "^4.6.14",
+    "sequelize": "^6.37.1",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.0"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "nodemon": "^3.1.0",
+    "prettier": "^3.2.5",
+    "sequelize-cli": "^6.6.2"
+  }
+}
